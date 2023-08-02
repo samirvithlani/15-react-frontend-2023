@@ -14,6 +14,16 @@ function App() {
     age: 28,
   };
 
+  var persons = [
+    {
+      id:1,
+      name:"Parth"
+    },{
+      id:2,
+      name:"Priya"
+    }
+  ]
+
   return (
     <div className="App">
       <Header />
@@ -29,6 +39,46 @@ function App() {
         {user.name}
         {user.age}
       </div>
+
+      <div>
+        <h1>Persons</h1>
+        {
+          persons.map((per)=>{
+            return(
+              <div>
+                <h1>{per.id}</h1>
+                <h2>{per.name}</h2>
+                </div>
+            )
+          })
+        }
+
+      </div>
+
+
+      <table className="table table-dark">
+        <thead>
+          <tr>
+            <th>Id</th>
+            <th>Name</th>
+          </tr>
+        </thead>
+        <tbody>
+          {
+            persons.map((per)=>{
+              return(<tr>
+                <td>{per.id}</td>
+                <td>{per.name}</td>
+              </tr>)
+            })
+          }
+        </tbody>
+
+      </table>
+
+
+
+
       <Footer />
     </div>
   );

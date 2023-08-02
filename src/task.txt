@@ -1,0 +1,12 @@
+employees array 
+id
+name
+salary
+gender
+isActive
+
+male employees name --> green
+female employees name --> red
+
+10000 less then --> print salary line-through
+
