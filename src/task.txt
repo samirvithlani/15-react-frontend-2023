@@ -10,3 +10,25 @@ female employees name --> red
 
 10000 less then --> print salary line-through
 
+
+
+
+3 options to transfer data bw components    
+
+1) props A -->B  __>C  props drilling
+2) context 
+3) redux
+
+*/
+
+virtual dom -->  react js using vdom
+real dom --> replicate the vdom to real dom
+// virtual dom --> compare the vdom and real dom --> if any changes --> update the real dom 
+state object --> 1) data 2) ui
+
+
+life cycle methods/hooks
+useState
+
+
+
