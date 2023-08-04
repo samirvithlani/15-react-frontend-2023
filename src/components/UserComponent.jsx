@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { UserList } from './UserList'
+import { UserRegi } from './UserRegi'
 
 export const UserComponent = (props) => {
 
@@ -53,6 +54,7 @@ export const UserComponent = (props) => {
         <h1>USER COMPONENT</h1>
         {/* <button onClick={()=>{test()}}>TEST</button> */}
         <UserList apptitle ={props.apptitle} users = {users} test ={test} delete = {deleteUser} add ={addUser}/>
+        <UserRegi add ={addUser}/>
     </div>
   )
 }

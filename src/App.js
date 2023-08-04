@@ -3,6 +3,7 @@ import "./App.css";
 import Header from "./components/Header";
 import { Footer } from "./components/Footer";
 import { UserComponent } from "./components/UserComponent";
+import { StudentRegister } from "./components/StudentRegister";
 
 function App() {
   var title = "USER APPLICATION";
@@ -85,6 +86,7 @@ function App() {
     // </div>
     <div className="App">
         <UserComponent apptitle = {title}/>
+        {/* <StudentRegister/> */}
     </div>
   );
 }
