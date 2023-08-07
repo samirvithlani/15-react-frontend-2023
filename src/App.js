@@ -4,6 +4,16 @@ import Header from "./components/Header";
 import { Footer } from "./components/Footer";
 import { UserComponent } from "./components/UserComponent";
 import { StudentRegister } from "./components/StudentRegister";
+import { Navbar } from "./components/Navbar";
+import { Route, Routes } from "react-router-dom";
+import { Home } from "./components/Home";
+import { AboutUs } from "./components/AboutUs";
+import { Company } from "./components/Company";
+import { Country } from "./components/Country";
+import { ContactUs } from "./components/ContactUs";
+import { Director } from "./components/Director";
+import { ApiDemo1 } from "./components/ApiDemo1";
+import { ApiDemo2 } from "./components/ApiDemo2";
 
 function App() {
   var title = "USER APPLICATION";
@@ -85,8 +95,21 @@ function App() {
     //   <Footer />
     // </div>
     <div className="App">
-        <UserComponent apptitle = {title}/>
+
+        {/* <UserComponent apptitle = {title}/> */}
         {/* <StudentRegister/> */}
+        <Navbar/>
+        <Routes>
+          <Route path ="/home" element={<Home/>}></Route>
+          <Route path ="/aboutus" element={<AboutUs/>}></Route>
+          <Route path ="/aboutus/company" element= {<Company/>}></Route>
+          <Route path ="/aboutus/country" element = {<Country/>}></Route>
+          <Route path ="/contactus" element={<ContactUs/>}></Route>
+          <Route path ="/contactus/director/:id" element ={<Director/>}></Route>
+          <Route path ="/apidemo1" element={<ApiDemo1></ApiDemo1>}></Route>
+          <Route path="/apidemo2" element = {<ApiDemo2/>}></Route>
+
+        </Routes>
     </div>
   );
 }
